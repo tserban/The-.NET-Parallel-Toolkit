@@ -1,0 +1,12 @@
+10/22/2010 5:14:16 PM
+System.InvalidOperationException: Cannot start process because a file name has not been provided.
+   at System.Diagnostics.Process.Start()
+   at Thread_Profiler.Threads.ThreadProfiler.SampleExecution(Int32 duration, String processPath, String processArgs) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_1\Thread_Profiler\Threads\ThreadProfiler.cs:line 57
+   at Thread_Profiler.MainWindow.samplingButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_1\Thread_Profiler\MainWindow.xaml.cs:line 59
+
+10/22/2010 5:15:32 PM
+System.InvalidOperationException: Cannot start process because a file name has not been provided.
+   at System.Diagnostics.Process.Start()
+   at Thread_Profiler.Threads.ThreadProfiler.SampleExecution(Int32 duration, String processPath, String processArgs) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_1\Thread_Profiler\Threads\ThreadProfiler.cs:line 57
+   at Thread_Profiler.MainWindow.samplingButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_1\Thread_Profiler\MainWindow.xaml.cs:line 59
+

@@ -1,0 +1,80 @@
+﻿<Window x:Class="Parallel_Advisor.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Parallel Advisor" Height="600" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Resources>
+            <DataTemplate x:Key="outputListBoxDataTemplate"> 
+                <StackPanel Orientation="Horizontal">
+                    <Image Margin="4" Width="20" Height="20" Source="{Binding Path=IconPath}" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Line " VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,5,5,5"/>
+                    <TextBlock Width="30" Text="{Binding Path=Line}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,5,5,5"/>
+                    <TextBlock Text=": " VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,5,5,5"/>
+                    <TextBlock MaxWidth="600" Text="{Binding Path=Cause}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,5,5,5" TextWrapping="Wrap"/>
+                </StackPanel>
+            </DataTemplate>
+        </Grid.Resources>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Header="Input" Grid.Row="0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.4*"/>
+                    <ColumnDefinition Width="1.4*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Label Content="Input file:" Grid.Row="0" Grid.Column="0" Margin="0, 8, 10, 0" VerticalAlignment="Top" HorizontalAlignment="Right" />
+                <TextBox Grid.Row="0" Grid.Column="1" Margin="5,10,5,10" Name="browseTextBox" VerticalAlignment="Top" HorizontalAlignment="Left" Width="270" />
+                <Button Grid.Row="0" Grid.Column="2" Margin="5,10,10,10" Name="browseButton" VerticalAlignment="Top" HorizontalAlignment="Left" Width="70" Click="browseButton_Click">Browse</Button>
+            </Grid>
+        </GroupBox>
+        
+        <GroupBox Header="Options" Grid.Row="1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5*" />
+                </Grid.ColumnDefinitions>
+                <Button Name="analyzeButton" Margin="12" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="70" Click="analyzeButton_Click">Analyze</Button>
+                <CheckBox Grid.Row="0" Grid.Column="1" Margin="5,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Name="detailsCheckbox" />
+                <Label Content="Show on source" Grid.Row="0" Grid.Column="4" Margin="20,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"></Label>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Output" Grid.Row="2">
+            <ListBox Margin="10" Name="outputListBox" ItemTemplate="{StaticResource outputListBoxDataTemplate}">
+                <ListBox.ContextMenu>
+                    <ContextMenu>                        
+                        <MenuItem Header="Hide Warning" Click="MenuItem_Click"/>
+                    </ContextMenu>
+                </ListBox.ContextMenu>
+            </ListBox>
+        </GroupBox>
+        
+        <GroupBox Header="Parallel Conversion" Grid.Row="3">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.4*"/>
+                    <ColumnDefinition Width="1.4*"/>
+                    <ColumnDefinition Width="0.4*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="1.1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Content="Output file:" Grid.Row="0" Grid.Column="0" Margin="0,8,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" />
+                <TextBox Grid.Row="0" Grid.Column="1" Margin="5,10,5,10" Name="convertTextBox" VerticalAlignment="Top" HorizontalAlignment="Left" Width="270" />
+                <Button Grid.Row="0" Grid.Column="2" Margin="5,10,5,10" Name="browseButtonBottom" VerticalAlignment="Top" HorizontalAlignment="Left" Width="70" Click="browseButtonBottom_Click">Browse</Button>
+                <Button Grid.Row="0" Grid.Column="3" Margin="5,10,10,10" Name="convertButton" VerticalAlignment="Top" HorizontalAlignment="Left" Width="70" Click="convertButton_Click">Convert</Button>
+                <CheckBox Grid.Row="0" Grid.Column="4" Margin="5,15,10,10" VerticalAlignment="Top" HorizontalAlignment="Left" Name="comparisonCheckbox" />
+                <Label Content="Show comparison" Grid.Row="0" Grid.Column="4" Margin="20,8,10,10" VerticalAlignment="Top" HorizontalAlignment="Left"></Label>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

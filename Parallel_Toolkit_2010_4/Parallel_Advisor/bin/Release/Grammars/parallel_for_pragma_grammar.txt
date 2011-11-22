@@ -1,0 +1,9 @@
+constant parallel_for schedule remaining
+1 parallel for static dynamic nosync //@
+5
+constant->1
+parallel_for->//@ parallel for schedule
+parallel_for->//@ parallel for schedule remaining
+schedule->static|dynamic
+remaining->constant|nosync|constant nosync
+parallel_for

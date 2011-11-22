@@ -1,0 +1,17 @@
+variable constant type for_loop expr operator rest method_call params param chained_variable array_index indexing
+( ) ++ = < int long for ; + - * % / 1 0 , . [ ]
+13
+variable->0
+constant->1
+type->int|long
+for_loop->for ( type variable = expr ; variable < expr ; variable ++ )
+expr->array_index|chained_variable|constant|variable|( expr )|constant rest|variable rest|( expr ) rest|chained_variable rest|array_index rest
+rest->operator expr
+operator->+|-|*|/|%
+method_call->variable ( )|variable ( params )
+params->param|param , params
+param->expr
+chained_variable->method_call . chained_variable|variable . chained_variable|array_index . chained_variable|variable|method_call|array_index
+array_index->variable indexing
+indexing->[ expr ]|[ expr ] indexing
+for_loop

@@ -1,0 +1,16 @@
+atomic_op variable constant expr operator rest method_call params param chained_variable array_index indexing
+( ) ++ -- += -= 1 0 , . [ ]
+12
+variable->0
+constant->1
+atomic_op->chained_variable operator
+expr->array_index|chained_variable|constant|variable|( expr )|constant rest|variable rest|( expr ) rest|chained_variable rest|array_index rest
+rest->operator expr
+operator->++|--|-=|+=
+method_call->variable ( )|variable ( params )
+params->param|param , params
+param->expr
+chained_variable->method_call . chained_variable|variable . chained_variable|array_index . chained_variable|variable|method_call|array_index
+array_index->variable indexing
+indexing->[ expr ]|[ expr ] indexing
+atomic_op

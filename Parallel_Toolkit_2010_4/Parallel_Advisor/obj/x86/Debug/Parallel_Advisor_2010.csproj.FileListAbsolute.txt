@@ -1,0 +1,16 @@
+D:\VSProjects\C#\Projects\Parallel_Toolkit\Parallel_Advisor\bin\Debug\WindowsApplication.exe.config
+D:\VSProjects\C#\Projects\Parallel_Toolkit\Parallel_Advisor\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\VSProjects\C#\Projects\Parallel_Toolkit\Parallel_Advisor\obj\x86\Debug\App.baml
+D:\VSProjects\C#\Projects\Parallel_Toolkit\Parallel_Advisor\obj\x86\Debug\ComparisonWindow.baml
+D:\VSProjects\C#\Projects\Parallel_Toolkit\Parallel_Advisor\obj\x86\Debug\MainWindow.baml
+D:\VSProjects\C#\Projects\Parallel_Toolkit\Parallel_Advisor\obj\x86\Debug\WarningsWindow.baml
+D:\VSProjects\C#\Projects\Parallel_Toolkit\Parallel_Advisor\obj\x86\Debug\App.g.cs
+D:\VSProjects\C#\Projects\Parallel_Toolkit\Parallel_Advisor\obj\x86\Debug\ComparisonWindow.g.cs
+D:\VSProjects\C#\Projects\Parallel_Toolkit\Parallel_Advisor\obj\x86\Debug\MainWindow.g.cs
+D:\VSProjects\C#\Projects\Parallel_Toolkit\Parallel_Advisor\obj\x86\Debug\WarningsWindow.g.cs
+D:\VSProjects\C#\Projects\Parallel_Toolkit\Parallel_Advisor\obj\x86\Debug\WindowsApplication_Content.g.cs
+D:\VSProjects\C#\Projects\Parallel_Toolkit\Parallel_Advisor\obj\x86\Debug\WindowsApplication_MarkupCompile.cache
+D:\VSProjects\C#\Projects\Parallel_Toolkit\Parallel_Advisor\obj\x86\Debug\WindowsApplication.g.resources
+D:\VSProjects\C#\Projects\Parallel_Toolkit\Parallel_Advisor\obj\x86\Debug\Parallel_Advisor_2010.Properties.Resources.resources
+D:\VSProjects\C#\Projects\Parallel_Toolkit\Parallel_Advisor\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\VSProjects\C#\Projects\Parallel_Toolkit\Parallel_Advisor\obj\x86\Debug\GenerateResource.write.1.tlog
