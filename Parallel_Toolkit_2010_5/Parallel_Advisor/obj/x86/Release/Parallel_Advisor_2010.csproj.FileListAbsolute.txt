@@ -1,0 +1,1 @@
+D:\VSProjects\C#\Projects\Parallel_Toolkit\Parallel_Advisor\bin\Release\WindowsApplication.exe.config

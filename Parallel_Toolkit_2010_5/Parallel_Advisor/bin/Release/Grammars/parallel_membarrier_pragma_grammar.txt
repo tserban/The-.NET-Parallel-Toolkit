@@ -1,0 +1,5 @@
+parallel_membarrier
+parallel membarrier //@
+1
+parallel_membarrier->//@ parallel membarrier
+parallel_membarrier

@@ -1,0 +1,3 @@
+INFO - Application started.
+INFO - Number 0 found: 2147481744
+INFO - Number 1 found: 2147466518

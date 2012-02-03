@@ -1,0 +1,6 @@
+parallel_task
+parallel task nosync //@
+2
+parallel_task->//@ parallel task
+parallel_task->//@ parallel task nosync
+parallel_task

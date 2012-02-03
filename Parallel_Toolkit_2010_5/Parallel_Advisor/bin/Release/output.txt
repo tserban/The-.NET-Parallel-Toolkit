@@ -1,0 +1,325 @@
+5/10/2010 8:54:21 PM
+System.ArgumentException: Empty path name is not legal.
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Boolean detectEncodingFromByteOrderMarks)
+   at Parallel_Advisor.Scanning.ForPragmaScanner.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010\Parallel_Advisor\Scanning\ForPragmaScanner.cs:line 51
+
+5/12/2010 7:38:30 PM
+System.ArgumentException: Empty path name is not legal.
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Boolean detectEncodingFromByteOrderMarks)
+   at Parallel_Advisor.Conversion.ParallelForConverter.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010\Parallel_Advisor\Conversion\ParallelForConverter.cs:line 44
+
+5/13/2010 11:03:12 AM
+System.ArgumentException: Empty path name is not legal.
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Boolean detectEncodingFromByteOrderMarks)
+   at Parallel_Advisor.Scanning.ForPragmaScanner.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010\Parallel_Advisor\Scanning\ForPragmaScanner.cs:line 51
+
+6/28/2010 3:48:07 PM
+System.ArgumentException: Empty path name is not legal.
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Boolean detectEncodingFromByteOrderMarks)
+   at Parallel_Advisor.Scanning.ForPragmaScanner.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_1\Parallel_Advisor\Scanning\ForPragmaScanner.cs:line 46
+
+6/28/2010 3:48:08 PM
+System.Exception: System.ArgumentException: Empty path name is not legal.
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Boolean detectEncodingFromByteOrderMarks)
+   at Parallel_Advisor.Scanning.ForPragmaScanner.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_1\Parallel_Advisor\Scanning\ForPragmaScanner.cs:line 46
+   at Parallel_Advisor.Scanning.ForPragmaScanner.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_1\Parallel_Advisor\Scanning\ForPragmaScanner.cs:line 127
+   at Parallel_Advisor.MainWindow.analyzeButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_1\Parallel_Advisor\MainWindow.xaml.cs:line 63
+
+6/28/2010 3:48:12 PM
+System.ArgumentException: Empty path name is not legal.
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Boolean detectEncodingFromByteOrderMarks)
+   at Parallel_Advisor.Conversion.ParallelForConverter.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_1\Parallel_Advisor\Conversion\ParallelForConverter.cs:line 44
+
+6/28/2010 3:48:12 PM
+System.Exception: System.ArgumentException: Empty path name is not legal.
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Boolean detectEncodingFromByteOrderMarks)
+   at Parallel_Advisor.Conversion.ParallelForConverter.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_1\Parallel_Advisor\Conversion\ParallelForConverter.cs:line 44
+   at Parallel_Advisor.Conversion.ParallelForConverter.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_1\Parallel_Advisor\Conversion\ParallelForConverter.cs:line 140
+   at Parallel_Advisor.MainWindow.convertButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_1\Parallel_Advisor\MainWindow.xaml.cs:line 125
+
+7/4/2010 9:10:25 PM
+System.ArgumentException: Empty path name is not legal.
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Boolean detectEncodingFromByteOrderMarks)
+   at Parallel_Advisor.Scanning.ForPragmaScanner.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_1\Parallel_Advisor\Scanning\ForPragmaScanner.cs:line 46
+
+7/4/2010 9:10:25 PM
+System.Exception: System.ArgumentException: Empty path name is not legal.
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Boolean detectEncodingFromByteOrderMarks)
+   at Parallel_Advisor.Scanning.ForPragmaScanner.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_1\Parallel_Advisor\Scanning\ForPragmaScanner.cs:line 46
+   at Parallel_Advisor.Scanning.ForPragmaScanner.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_1\Parallel_Advisor\Scanning\ForPragmaScanner.cs:line 127
+   at Parallel_Advisor.MainWindow.analyzeButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_1\Parallel_Advisor\MainWindow.xaml.cs:line 63
+
+11/5/2010 4:28:41 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Parallel_Advisor.Conversion.Parallelizer.ApplyConversions(String initialFile, String finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\Conversion\Parallelizer.cs:line 47
+   at Parallel_Advisor.MainWindow.ApplyConversions(String initialFile, String finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 191
+   at Parallel_Advisor.MainWindow.convertButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 166
+
+11/5/2010 4:29:37 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Parallel_Advisor.Conversion.Parallelizer.ApplyConversions(String initialFile, String finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\Conversion\Parallelizer.cs:line 48
+   at Parallel_Advisor.MainWindow.ApplyConversions(String initialFile, String finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 191
+   at Parallel_Advisor.MainWindow.convertButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 166
+
+11/5/2010 4:30:09 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Parallel_Advisor.Conversion.Parallelizer.ApplyConversions(String initialFile, String finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\Conversion\Parallelizer.cs:line 48
+   at Parallel_Advisor.MainWindow.ApplyConversions(String initialFile, String finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 191
+   at Parallel_Advisor.MainWindow.convertButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 166
+
+11/5/2010 4:30:39 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Parallel_Advisor.Conversion.Parallelizer.ApplyConversions(String initialFile, String finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\Conversion\Parallelizer.cs:line 48
+   at Parallel_Advisor.MainWindow.ApplyConversions(String initialFile, String finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 192
+   at Parallel_Advisor.MainWindow.convertButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 164
+
+11/5/2010 4:31:45 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Parallel_Advisor.Conversion.Parallelizer.ApplyConversions(String initialFile, String finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\Conversion\Parallelizer.cs:line 50
+   at Parallel_Advisor.MainWindow.ApplyConversions(String initialFile, String finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 191
+   at Parallel_Advisor.MainWindow.convertButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 166
+
+11/5/2010 4:32:43 PM
+System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.
+Parameter name: index
+   at System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   at Parallel_Advisor.ComparisonWindow.nextButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\ComparisonWindow.xaml.cs:line 93
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.Controls.Button.OnClick()
+   at System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Boolean isSingleParameter)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+   at System.Windows.Threading.Dispatcher.InvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Boolean isSingleParameter)
+   at MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   at System.Windows.Threading.Dispatcher.TranslateAndDispatchMessage(MSG& msg)
+   at System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   at System.Windows.Window.ShowHelper(Object booleanBox)
+   at System.Windows.Window.Show()
+   at System.Windows.Window.ShowDialog()
+   at Parallel_Advisor.MainWindow.ApplyConversions(String initialFile, String finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 199
+   at Parallel_Advisor.MainWindow.convertButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 166
+
+11/5/2010 4:33:38 PM
+System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.
+Parameter name: index
+   at System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   at Parallel_Advisor.ComparisonWindow.FillTextBoxes() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\ComparisonWindow.xaml.cs:line 74
+   at Parallel_Advisor.ComparisonWindow..ctor(String[] initialFile, String[] finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\ComparisonWindow.xaml.cs:line 37
+   at Parallel_Advisor.MainWindow.ApplyConversions(String initialFile, String finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 199
+   at Parallel_Advisor.MainWindow.convertButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 166
+
+11/5/2010 4:33:59 PM
+System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.
+Parameter name: index
+   at System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   at Parallel_Advisor.ComparisonWindow.FillTextBoxes() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\ComparisonWindow.xaml.cs:line 74
+   at Parallel_Advisor.ComparisonWindow..ctor(String[] initialFile, String[] finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\ComparisonWindow.xaml.cs:line 37
+   at Parallel_Advisor.MainWindow.ApplyConversions(String initialFile, String finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 199
+   at Parallel_Advisor.MainWindow.convertButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 166
+
+11/5/2010 4:34:41 PM
+System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.
+Parameter name: index
+   at System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   at Parallel_Advisor.ComparisonWindow.FillTextBoxes() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\ComparisonWindow.xaml.cs:line 74
+   at Parallel_Advisor.ComparisonWindow..ctor(String[] initialFile, String[] finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\ComparisonWindow.xaml.cs:line 37
+   at Parallel_Advisor.MainWindow.ApplyConversions(String initialFile, String finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 199
+   at Parallel_Advisor.MainWindow.convertButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 166
+
+11/7/2010 4:21:14 PM
+System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.
+Parameter name: index
+   at System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   at Parallel_Advisor.ComparisonWindow.FillTextBoxes() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\ComparisonWindow.xaml.cs:line 74
+   at Parallel_Advisor.ComparisonWindow..ctor(String[] initialFile, String[] finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\ComparisonWindow.xaml.cs:line 37
+   at Parallel_Advisor.MainWindow.ApplyConversions(String initialFile, String finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 199
+   at Parallel_Advisor.MainWindow.convertButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 143
+
+11/7/2010 4:26:18 PM
+System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.
+Parameter name: index
+   at System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   at Parallel_Advisor.ComparisonWindow.FillTextBoxes() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\ComparisonWindow.xaml.cs:line 74
+   at Parallel_Advisor.ComparisonWindow..ctor(String[] initialFile, String[] finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\ComparisonWindow.xaml.cs:line 38
+   at Parallel_Advisor.MainWindow.ApplyConversions(String initialFile, String finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 198
+   at Parallel_Advisor.MainWindow.convertButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 143
+
+11/7/2010 4:44:51 PM
+System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.
+Parameter name: index
+   at System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   at Parallel_Advisor.ComparisonWindow.FillTextBoxes() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\ComparisonWindow.xaml.cs:line 74
+   at Parallel_Advisor.ComparisonWindow..ctor(String[] initialFile, String[] finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\ComparisonWindow.xaml.cs:line 37
+   at Parallel_Advisor.MainWindow.ApplyConversions(String initialFile, String finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 199
+   at Parallel_Advisor.MainWindow.convertButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 143
+
+11/7/2010 4:45:28 PM
+System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.
+Parameter name: index
+   at System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   at Parallel_Advisor.ComparisonWindow.FillTextBoxes() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\ComparisonWindow.xaml.cs:line 74
+   at Parallel_Advisor.ComparisonWindow..ctor(String[] initialFile, String[] finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\ComparisonWindow.xaml.cs:line 37
+   at Parallel_Advisor.MainWindow.ApplyConversions(String initialFile, String finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 199
+   at Parallel_Advisor.MainWindow.convertButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 143
+
+11/7/2010 4:46:25 PM
+System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.
+Parameter name: index
+   at System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   at Parallel_Advisor.ComparisonWindow.FillTextBoxes() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\ComparisonWindow.xaml.cs:line 74
+   at Parallel_Advisor.ComparisonWindow..ctor(String[] initialFile, String[] finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\ComparisonWindow.xaml.cs:line 37
+   at Parallel_Advisor.MainWindow.ApplyConversions(String initialFile, String finalFile) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 199
+   at Parallel_Advisor.MainWindow.convertButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_2\Parallel_Advisor\MainWindow.xaml.cs:line 143
+
+4/6/2011 7:54:14 PM
+System.IO.FileNotFoundException: Could not find file 'D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\bin\Release\parallel_for_grammar'.
+File name: 'D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\bin\Release\parallel_for_grammar'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Boolean detectEncodingFromByteOrderMarks)
+   at Parallel_Advisor.Parsing.Grammar.ReadGrammarFromFile(String file) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Parsing\Grammar.cs:line 49
+   at Parallel_Advisor.MainWindow.analyzeButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\MainWindow.xaml.cs:line 65
+
+4/6/2011 7:55:31 PM
+System.IO.FileNotFoundException: Could not find file 'D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\bin\Release\parallel_for_grammar.txt'.
+File name: 'D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\bin\Release\parallel_for_grammar.txt'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Boolean detectEncodingFromByteOrderMarks)
+   at Parallel_Advisor.Parsing.Grammar.ReadGrammarFromFile(String file) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Parsing\Grammar.cs:line 49
+   at Parallel_Advisor.MainWindow.analyzeButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\MainWindow.xaml.cs:line 65
+
+4/6/2011 7:56:12 PM
+System.IO.FileNotFoundException: Could not find file 'D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\bin\Release\parallel_for_grammar.txt'.
+File name: 'D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\bin\Release\parallel_for_grammar.txt'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Boolean detectEncodingFromByteOrderMarks)
+   at Parallel_Advisor.Parsing.Grammar.ReadGrammarFromFile(String file) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Parsing\Grammar.cs:line 49
+   at Parallel_Advisor.MainWindow.analyzeButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\MainWindow.xaml.cs:line 65
+
+4/7/2011 12:09:18 AM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Parallel_Advisor.Parsing.Parser.ValidateExpression(List`1 expression, Grammar grammar) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Parsing\Parser.cs:line 55
+   at Parallel_Advisor.Scanning.ForPragmaScanner.ValidateFor(List`1 programInternalForm) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Scanning\ForPragmaScanner.cs:line 223
+   at Parallel_Advisor.Scanning.ForPragmaScanner.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Scanning\ForPragmaScanner.cs:line 108
+   at Parallel_Advisor.MainWindow.analyzeButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\MainWindow.xaml.cs:line 65
+
+4/7/2011 11:36:41 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Parallel_Advisor.Parsing.Parser.ValidateExpression(List`1 expression, Grammar grammar) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Parsing\Parser.cs:line 55
+   at Parallel_Advisor.Scanning.ForPragmaScanner.ValidateFor(List`1 programInternalForm) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Scanning\ForPragmaScanner.cs:line 222
+   at Parallel_Advisor.Scanning.ForPragmaScanner.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Scanning\ForPragmaScanner.cs:line 108
+   at Parallel_Advisor.MainWindow.analyzeButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\MainWindow.xaml.cs:line 65
+
+4/7/2011 11:52:06 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Parallel_Advisor.Parsing.Parser.ValidateExpression(List`1 expression, Grammar grammar) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Parsing\Parser.cs:line 55
+   at Parallel_Advisor.Scanning.ForPragmaScanner.ValidateFor(List`1 programInternalForm) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Scanning\ForPragmaScanner.cs:line 222
+   at Parallel_Advisor.Scanning.ForPragmaScanner.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Scanning\ForPragmaScanner.cs:line 108
+   at Parallel_Advisor.MainWindow.analyzeButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\MainWindow.xaml.cs:line 65
+
+4/8/2011 3:29:33 PM
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\bin\Release\Grammar\parallel_while_pragma_grammar.txt'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Boolean detectEncodingFromByteOrderMarks)
+   at Parallel_Advisor.Parsing.Grammar.ReadGrammarFromFile(String file) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Parsing\Grammar.cs:line 49
+   at Parallel_Advisor.Scanning.WhilePragmaScanner..ctor(String file) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Scanning\WhilePragmaScanner.cs:line 29
+   at Parallel_Advisor.MainWindow.analyzeButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\MainWindow.xaml.cs:line 66
+
+4/8/2011 3:45:37 PM
+System.IO.FileNotFoundException: Could not find file 'D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\bin\Release\Grammars\parallel_task_pragma_grammar.txt'.
+File name: 'D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\bin\Release\Grammars\parallel_task_pragma_grammar.txt'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Boolean detectEncodingFromByteOrderMarks)
+   at Parallel_Advisor.Parsing.Grammar.ReadGrammarFromFile(String file) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Parsing\Grammar.cs:line 49
+   at Parallel_Advisor.Scanning.TasksPragmaScanner..ctor(String file) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Scanning\TasksPragmaScanner.cs:line 37
+   at Parallel_Advisor.MainWindow.analyzeButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\MainWindow.xaml.cs:line 67
+
+4/8/2011 3:46:12 PM
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Parallel_Advisor.Scanning.TasksPragmaScanner.CheckForPragmas(Int32 currentIndex, String[] codeLines) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Scanning\TasksPragmaScanner.cs:line 154
+   at Parallel_Advisor.Scanning.TasksPragmaScanner.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Scanning\TasksPragmaScanner.cs:line 86
+   at Parallel_Advisor.MainWindow.analyzeButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\MainWindow.xaml.cs:line 67
+
+4/8/2011 3:49:46 PM
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Parallel_Advisor.Parsing.Parser.ValidateExpression(List`1 expression, Grammar grammar) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Parsing\Parser.cs:line 55
+   at Parallel_Advisor.Scanning.TasksPragmaScanner.CheckForPragmas(Int32 currentIndex, String[] codeLines) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Scanning\TasksPragmaScanner.cs:line 145
+   at Parallel_Advisor.Scanning.TasksPragmaScanner.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Scanning\TasksPragmaScanner.cs:line 84
+   at Parallel_Advisor.MainWindow.analyzeButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\MainWindow.xaml.cs:line 67
+
+4/9/2011 2:43:58 PM
+System.ArgumentException: Empty path name is not legal.
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Boolean detectEncodingFromByteOrderMarks)
+   at Parallel_Advisor.Scanning.ForPragmaScanner.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Scanning\ForPragmaScanner.cs:line 55
+
+4/9/2011 2:43:59 PM
+System.Exception: System.ArgumentException: Empty path name is not legal.
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Boolean detectEncodingFromByteOrderMarks)
+   at Parallel_Advisor.Scanning.ForPragmaScanner.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Scanning\ForPragmaScanner.cs:line 55
+   at Parallel_Advisor.Scanning.ForPragmaScanner.ScanFile() in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Scanning\ForPragmaScanner.cs:line 136
+   at Parallel_Advisor.MainWindow.analyzeButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\MainWindow.xaml.cs:line 65
+
+4/9/2011 2:48:23 PM
+System.IO.FileNotFoundException: Could not find file 'D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\bin\Release\Grammars\parallel_membarrier_pragma_grammar'.
+File name: 'D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\bin\Release\Grammars\parallel_membarrier_pragma_grammar'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Boolean detectEncodingFromByteOrderMarks)
+   at Parallel_Advisor.Parsing.Grammar.ReadGrammarFromFile(String file) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Parsing\Grammar.cs:line 49
+   at Parallel_Advisor.Scanning.BarrierPragmaScanner..ctor(String file) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\Scanning\BarrierPragmaScanner.cs:line 28
+   at Parallel_Advisor.MainWindow.analyzeButton_Click(Object sender, RoutedEventArgs e) in D:\VSProjects\C#\Projects\Parallel_Toolkit_2010_4\Parallel_Advisor\MainWindow.xaml.cs:line 70
+
