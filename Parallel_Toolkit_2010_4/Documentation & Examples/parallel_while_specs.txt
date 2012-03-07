@@ -35,16 +35,16 @@ values of current, since it was increased atomically. The parallel code will loo
 tasks = cpus;
 for(i = 0; i < cpus; i++)
 {
-     //spawn thread with code:
-     {
+    //spawn thread with code:
+    {
          while(N > 0)
          {
-	// verify if prime
-	if(isPrime)
+               // verify if prime
+                if(isPrime)
                 {
                       atomic N--;
                 }
-	atomic current += 2;
+                atomic current += 2;
           }
 
           atomic tasks--;
