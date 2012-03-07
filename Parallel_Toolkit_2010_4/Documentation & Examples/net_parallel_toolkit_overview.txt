@@ -1,0 +1,35 @@
+.NET Parallel Toolkit
+
+The .NET Parallel Toolkit contains 3 applications that help .NET developers work better 
+when writing parallel code. Next we will briefly describe the functionality of each of them:
+
+The first tool is the  “Parallel Advisor”. This application greatly helps a developer in the 
+abstraction process of building his/her parallel code. Let’s say you are a programmer 
+that wants to write parallel code, but don’t know much about the .NET threading API, however 
+you have a good knowledge of optimization and threading in general. By using the Parallel Advisor, 
+you can insert special comments into your source code to indicate where exactly you would like 
+parallelism to be inserted (similar to openMP). Even if you are an experienced .NET threading 
+programmer, these tools can potentially reduce development time.
+
+You can then feed your annotated source code to the Parallel Advisor, which will scan your code 
+and attempt to detect potential errors that will appear if parallelism is inserted in the indicated 
+spots. The errors it looks for are mainly data races, dependencies between for loops and potentially 
+nested parallelism. 
+	
+The parallel patterns supported will be parallel for (data decomposition) and task-based parallelism 
+(calling several sections of code in parallel). Once the Parallel Advisor scans your source code for 
+errors, it will give you a report on its findings. You are free to ignore the advice and go on to the 
+next step, which is the conversion to parallel code, done by the “Parallel Converter”.
+
+The Parallel Converter takes your annotated source code and turns it into real .NET threaded code. 
+As mentioned earlier, it can parallelize for loops or call several “tasks” in parallel. If you have ignored 
+the suggestions of the Parallel Advisor, it is not guaranteed that your transformed code will work 
+properly. This tool will also not compile your initial code. If your initial code did pass compilation, it is 
+however guaranteed that the transformed code will also pass compilation.
+	
+Finally, the third tool in the package is the “Thread Profiler”, a tool that is very useful in assessing 
+the scalability and load-balance of a parallel application. You can use it in conjunction with the other 
+two tools offered, or with any other application your have written. This application takes an executable 
+file and performs sampling of its execution, providing a report on the activity of its threads: how 
+much processor time they used, which percentage of the total running time they ran and so on. 
+This is done by querying the Operating System. The application also provides processor information.

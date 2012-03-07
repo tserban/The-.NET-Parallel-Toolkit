@@ -1,0 +1,9 @@
+Behaviour and parallelization strategies
+
+The //@ parallel lock <object name> pragma may be inserted above a C# scope to signify that the 
+code inside should be serialized with respect to the executing threads using the designated object. 
+The pragma is converted to a lock statement on the given object. Note that the Parallel Advisor 
+assumes the object already exists and will not create it for you.
+
+Note that for a single variable update, serialization via the atomic pragma is much faster than using 
+the lock pragma, as it uses non-blocking locks.

@@ -1,0 +1,69 @@
+Behaviour and parallelization strategies
+
+For loops can be parallelized by inserting the //@ parallel for pragma directly above the for instruction.
+
+Options: static / dynamic.
+Parameters: (optional) N - number of iterations to include in each chunk.
+
+If present without the N parameter, the static parallel for will have each thread execute a continuous 
+chunk of data. The number of iterations in each chunk is computed by dividing the total number of 
+iterations to the number of cores available. If the parameter is present, then each thread will get a 
+continuous chunk of N iterations, then another one if available and so on.
+
+Let’s take an example:
+16 iterations, 4 cores:
+//@ parallel for static - (1-4) (5-8) (9-12) (13-16)
+//@ parallel for static 2 - (1-2, 9-10) (3-4, 11-12) (5-6, 13-14) (7-8, 15-16)
+
+If present without the N parameter, the dynamic parallel for will take each iteration and place the 
+corresponding computations as a task inside a thread pool queue. This usually ensures good load 
+balance, but high contention and poor cache behaviour. As each thread finishes, it is free to take 
+another iteration and so on. If the parameter is present, each task placed inside the queue will 
+contain N iterations.
+
+Hence, the general structure of the parallel for pragma is:
+//@ parallel for static / dynamic [N] [nosync]
+
+Pragmas that do not conform to this structure will be rejected by the Parallel Advisor.
+
+- Structure of parallel for loops and restrictions
+
+Not every for loop may be a candidate for parallel transformation. The following structure must be 
+respected:
+for(int / long i = initialValue; i < finalValue; i++) { statements }
+
+That is, only the for variable initialization is permitted, the for stop condition must be a less than 
+inequality and the step must be +1. Also, the curly braces are mandatory, even if the for body 
+consists of only one instruction.
+
+for loops that do not conform to this structure will be rejected by the Parallel Advisor.
+
+Also, there are restrictions to the for body: we are advised  not to use break, return, goto or throw 
+to exit the for loop abruptly. If any of these keywords is detected, the parallel advisor will issue a 
+warning.
+
+Reserved variables
+
+The conversion of a for loop to a parallel for loop introduces additional code. This additional code 
+has certain reserved variables such as a core counter variable or a task counter variable. The user 
+should avoid having the same variables declared in the corresponding scopes, because the code 
+will obviously not compile due to name clashes. The reserved variable names and types are listed 
+below:
+
+- int CPUS[index] - the number of available cores.
+- int TID[index] - the id of the current thread outside the thread code.
+- Thread[] THREADS[index] - the array that holds the team of threads.
+- object PARAM[index] - lambda expression parameter.
+- int ID[index] - the id of the current thread inside the thread code.
+- int INDEX[index] - iteration variable over the number of cores.
+- int / long REMAINDER[index] - the remainder obtained by dividing the total iteration count to the 
+number of available cores.
+- int / long START[index] - the start index from which the current thread begins computations.
+- int / long END[index] - the end index from where the current thread stops computations.
+- int / long CURRENT_TASK[index] - the current task processed by each thread in a dynamic parallel 
+for loop.
+- int GAP[index] - the gap in case it is provided.
+- int TASKS[index] - the task counter.
+
+where index is a unique number assigned to each parallel for loop incrementally.
+

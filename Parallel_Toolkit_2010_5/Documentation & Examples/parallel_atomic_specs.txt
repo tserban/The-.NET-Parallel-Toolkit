@@ -1,0 +1,12 @@
+Behaviour and parallelization strategies
+
+The //@ parallel atomic pragma may be used directly above a single variable update to signify 
+that it should be an atomic operation. Accepted operations are +=, -=, ++ and -- on an int or 
+long variable.
+
+The result of the conversion is a call to one of the methods:
+- Interlocked.Increment for ++.
+- Interlocked.Decrement for --.
+- Interlocked.Add for += and -=.
+Note that for a single variable update, serialization via the atomic pragma is much faster than 
+using the lock pragma, as it uses non-blocking locks.

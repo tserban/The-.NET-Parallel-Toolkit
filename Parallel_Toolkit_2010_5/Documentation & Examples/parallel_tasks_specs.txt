@@ -1,0 +1,29 @@
+Behaviour and parallelization strategies
+
+A programmer using the .NET Parallel Tookit can launch several tasks (sections of code) in parallel 
+using the //@ parallel tasks [pooled] [nosync] pragma. This pragma must have a corresponding 
+//@ end tasks pragma associated. Between these two, scopes that want to be executed in parallel 
+must be marked with the //@ parallel task [nosync] pragma. 
+
+If the pooled flag is off, for each parallel task encountered a thread is spawned and started. 
+Otherwise, only a number of threads equal to the number of available cores is spawned and each 
+thread executes tasks dynamically from a queue. The threads are all joined with a barrier at the 
+//@ end tasks pragma.
+
+Structure of parallel tasks and restrictions
+
+The only restriction is that each parallel task be a scope enclosed in curly braces.
+
+Reserved variables
+
+The reserved variable names and types are listed below:
+
+- Thread[] THREADS[index] - the array containing the team of threads that execute the tasks.
+- int TASKCOUNT[index] - the number of tasks within the parallel region.
+- ParameterizedThreadStart[] TASKLIST[index] - the list of tasks within the parallel region.
+- int CPUS[index] - the number of available cores.
+- int CURRENT_TASK[index] - the current task to be executed.
+- int TID[index] - iteration variable over the array of threads.
+- object PARAM[index] - lambda expression parameter.
+
+where index is a unique number assigned to each parallel tasks region incrementally.

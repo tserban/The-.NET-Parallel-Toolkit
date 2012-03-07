@@ -1,0 +1,76 @@
+Behaviour and parallelization strategies
+
+While loops can be parallelized by adding the //@ parallel while [nosync] pragma on the line directly 
+above the while loop. Unlike the parallel for pragma, this one has no parameters or clauses. This is 
+because no coherent iteration dispatch strategy can be applied for while loops, as they are liable to 
+end at any moment. For this reason, the only available strategy is to simply execute the while loop 
+on each created thread and have the master thread wait for all the threads to end, which will occur 
+once the while exit condition has become false. Thus, it is safe to assume that all involved threads 
+will end at the same time.
+
+Unlike the parallel for loop, a parallel while will require that some variable that gives us a measure 
+of the progress be declared global and modified within a critical section. Obviously, the while stop 
+condition will need to depend on this variable.
+
+Let us take as example the brute force computation of the first N prime numbers. We begin with 3 
+and keep adding 2 at each iteration (since after 2 there are no more even primes) and verify if the 
+current number is prime. General algorithm sketch:
+
+current = 3;
+while(N > 0)
+{
+    // verify if prime
+    if(isPrime)
+    {
+         N--;
+    }
+    current += 2;
+}
+
+Now, if we create a team of threads and have each one of them executing this section of code, we 
+will keep both current and N as global variables and operate atomically on them. We can easily see 
+that this leads to correct results. All threads will stop when N reaches 0 and will operate on different 
+values of current, since it was increased atomically. The parallel code will look like this:
+
+tasks = cpus;
+for(i = 0; i < cpus; i++)
+{
+     //spawn thread with code:
+     {
+         while(N > 0)
+         {
+	// verify if prime
+	if(isPrime)
+                {
+                      atomic N--;
+                }
+	atomic current += 2;
+          }
+
+          atomic tasks--;
+          if(tasks == 0) //signal master thread
+     }
+}
+//wait for signal
+
+Structure of parallel while loops and restrictions
+
+Since a while loop is meant to be a general purpose loop, not many restrictions can and should be 
+enforced. The only restriction is that the while body be enclosed in curly braces. 
+	
+Reserved variables
+
+The conversion of a while loop to a parallel while loop introduces additional code. This additional 
+code has certain reserved variables such as a core counter variable or a task counter variable. The 
+user should avoid having the same variables declared in the corresponding scopes, because the 
+code will obviously not compile due to name clashes. The reserved variable names and types are 
+listed below:
+
+- int CPUS[index] - the number of available cores.
+- object PARAM[index] - lambda expression parameter.
+- int TID[index] - iteration variable over the number of cores.
+- int TASKS[index] - the task counter.
+- Thread[] THREADS[index] - the array that holds the team of threads.
+
+where index is a unique number assigned to each parallel for loop incrementally.
+

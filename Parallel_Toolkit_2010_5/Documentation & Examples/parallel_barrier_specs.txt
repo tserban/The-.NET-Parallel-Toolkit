@@ -1,0 +1,13 @@
+Behaviour and parallelization strategies
+
+The //@ parallel membarrier pragma may be used to insert a full memory fence at a given location.
+
+Special care must be taken when reads and writes of shared variables are done by multiple threads, 
+as a wide array of optimizations such as instruction reordering or data caching may break your code 
+on multi-core machines. In such cases, it is useful to be able to introduce special instructions called 
+memory barriers. The introduction of such an instruction guarantees that no read / write operations 
+are reordered relative to it and also that all the values of shared variables are read from main memory, 
+rather than each core’s private cache.
+
+Please note that synchronization mechanisms such as locks introduce memory fences implicitly, 
+so there is no need for an explicit fence in these situations.
