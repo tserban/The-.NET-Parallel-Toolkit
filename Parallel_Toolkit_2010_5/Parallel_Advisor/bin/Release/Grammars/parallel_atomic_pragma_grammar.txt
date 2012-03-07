@@ -1,5 +1,0 @@
-parallel_atomic
-parallel atomic //@
-1
-parallel_atomic->//@ parallel atomic
-parallel_atomic

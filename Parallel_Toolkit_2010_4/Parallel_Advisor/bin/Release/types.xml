@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<types>
-	<type>for</type>
-	<type>while</type>
-	<type>tasks</type>
-	<type>lock</type>
-	<type>atomic</type>
-	<type>barrier</type>
-</types>

@@ -1,6 +1,0 @@
-parallel_lock variable
-parallel lock 0 //@
-2
-variable->0
-parallel_lock->//@ parallel lock variable
-parallel_lock
