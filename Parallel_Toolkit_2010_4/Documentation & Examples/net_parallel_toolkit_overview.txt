@@ -1,7 +1,7 @@
 .NET Parallel Toolkit
 
-The .NET Parallel Toolkit contains 3 applications that help .NET developers work better 
-when writing parallel code. Next we will briefly describe the functionality of each of them:
+The .NET Parallel Toolkit contains 3 applications that help .NET developers write parallel code faster 
+and more correctly. Next we will briefly describe the functionality of each of them:
 
 The first tool is the  “Parallel Advisor”. This application greatly helps a developer in the 
 abstraction process of building his/her parallel code. Let’s say you are a programmer 
